@@ -33,4 +33,7 @@ public class UserServiceImpl implements UserService {
         user.cleanUsersTable();
     }
 
+    public boolean close(){
+        return user.close();
+    }
 }

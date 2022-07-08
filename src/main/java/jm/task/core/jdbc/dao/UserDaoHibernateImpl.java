@@ -39,4 +39,9 @@ public class UserDaoHibernateImpl implements UserDao {
     public void cleanUsersTable() {
 
     }
+
+    @Override
+    public boolean close() {
+        return false;
+    }
 }

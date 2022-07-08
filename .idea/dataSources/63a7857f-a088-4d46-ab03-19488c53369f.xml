@@ -820,110 +820,78 @@
       <Engine>InnoDB</Engine>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <table id="230" parent="222" name="users">
+    <table id="230" parent="222" name="users_test">
       <Engine>InnoDB</Engine>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <table id="231" parent="222" name="users_test">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8_general_ci</CollationName>
-    </table>
-    <column id="232" parent="229" name="id">
-      <AutoIncrement>1</AutoIncrement>
+    <column id="231" parent="229" name="id">
+      <AutoIncrement>25</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="233" parent="229" name="model">
+    <column id="232" parent="229" name="model">
       <DataType>varchar(25)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="234" parent="229" name="color">
+    <column id="233" parent="229" name="color">
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="235" parent="229" name="user_id">
+    <column id="234" parent="229" name="user_id">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <foreign-key id="236" parent="229" name="autos_users_id_fk">
+    <foreign-key id="235" parent="229" name="autos_users_id_fk">
       <ColNames>user_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <OnUpdate>cascade</OnUpdate>
       <RefColNames>idusers</RefColNames>
       <RefTableName>users_test</RefTableName>
     </foreign-key>
-    <index id="237" parent="229" name="PRIMARY">
+    <index id="236" parent="229" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="238" parent="229" name="autos_users_id_fk">
+    <index id="237" parent="229" name="autos_users_id_fk">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="239" parent="229" name="PRIMARY">
+    <key id="238" parent="229" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="240" parent="230" name="user_id">
-      <AutoIncrement>1</AutoIncrement>
+    <column id="239" parent="230" name="idusers">
+      <AutoIncrement>25</AutoIncrement>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="241" parent="230" name="name">
-      <DataType>varchar(30)|0s</DataType>
-      <Position>2</Position>
-    </column>
-    <column id="242" parent="230" name="lastName">
-      <DataType>varchar(50)|0s</DataType>
-      <Position>3</Position>
-    </column>
-    <column id="243" parent="230" name="age">
-      <DataType>int(3)|0s</DataType>
-      <Position>4</Position>
-    </column>
-    <index id="244" parent="230" name="PRIMARY">
-      <ColNames>user_id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="245" parent="230" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="246" parent="231" name="idusers">
-      <AutoIncrement>13</AutoIncrement>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="247" parent="231" name="name">
+    <column id="240" parent="230" name="name">
       <DataType>varchar(45)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="248" parent="231" name="age">
+    <column id="241" parent="230" name="age">
       <DataType>int(3)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="249" parent="231" name="email">
+    <column id="242" parent="230" name="email">
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <index id="250" parent="231" name="PRIMARY">
+    <index id="243" parent="230" name="PRIMARY">
       <ColNames>idusers</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="251" parent="231" name="PRIMARY">
+    <key id="244" parent="230" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
